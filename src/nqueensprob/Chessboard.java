@@ -28,9 +28,10 @@ import javafx.stage.Stage;
  */
 public class Chessboard{
 
-    static boolean answer;
+    private static boolean answer;
     
     public static boolean createChessboard(int[][] solution){
+        
         Stage window = new Stage();
         
         BorderPane layout = new BorderPane();
@@ -88,6 +89,7 @@ public class Chessboard{
         
         Scene scene = new Scene(layout, 400, 400);
         window.setScene(scene);
+        window.show();
         return answer;
     }
 
