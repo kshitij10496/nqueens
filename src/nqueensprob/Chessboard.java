@@ -6,6 +6,7 @@
 package nqueensprob;
 
 import javafx.geometry.HPos;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.geometry.VPos;
 import javafx.scene.Scene;
@@ -68,7 +69,6 @@ public class Chessboard{
             board.getColumnConstraints().add(new ColumnConstraints(5, Control.USE_COMPUTED_SIZE, Double.POSITIVE_INFINITY, Priority.ALWAYS, HPos.CENTER, true));
             board.getRowConstraints().add(new RowConstraints(5, Control.USE_COMPUTED_SIZE, Double.POSITIVE_INFINITY, Priority.ALWAYS, VPos.CENTER, true));
         }
-        
         layout.setCenter(board);
         
         Button next = new Button("Next");
@@ -81,6 +81,7 @@ public class Chessboard{
                 });
     
         HBox options = new HBox();
+        options.setPadding(new Insets(20, 20, 20, 20));
         options.setAlignment(Pos.BOTTOM_CENTER);
         options.setSpacing(20);
         options.getChildren().addAll(next, quit);
