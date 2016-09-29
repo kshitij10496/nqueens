@@ -86,11 +86,9 @@ public class Chessboard{
         options.getChildren().addAll(next, quit);
         
         layout.setBottom(options);
-        
         Scene scene = new Scene(layout, 400, 400);
         window.setScene(scene);
         window.show();
         return answer;
     }
-
 }

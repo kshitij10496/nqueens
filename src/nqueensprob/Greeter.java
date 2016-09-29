@@ -60,9 +60,9 @@ public class Greeter extends Application {
         BorderPane layout = new BorderPane();
         layout.setCenter(center);
                 
-        Scene scene = new Scene(layout, 300, 250);
+        Scene scene = new Scene(layout, 500, 150);
         
-        primaryStage.setTitle("Hello World!");
+        primaryStage.setTitle("N-Queens Problem");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
@@ -100,9 +100,6 @@ public class Greeter extends Application {
 
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         launch(args);
     }
