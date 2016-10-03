@@ -124,14 +124,14 @@ public class Greeter extends Application {
             answer = false;    
             window.close();
         });
-    
         HBox options = createHBox(Pos.BOTTOM_CENTER);
         options.getChildren().addAll(next, quit);
         layout.setBottom(options);
         Scene scene = new Scene(layout, 400, 400);
         window.setScene(scene);
         window.show();
-        System.out.println("The value of answer in confirmation():" + answer);
+        
+        
         return answer;
     }
 
